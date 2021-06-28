@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+
+body{
+    font-size:62.5%;
+    
+    
+}
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+}
+h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-left: 1rem;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    
+    height: 16px;
+    width: 65px;
+    border-radius: 1rem;
+}
+
+.poke img{
+    height: 7rem;
+    width: 7rem;
+    position: absolute;
+    right: 3rem;
+    top: 0rem;
+}
+
+#id{
+    height: 7rem;
+    width: 3rem;
+}
+
+.containers{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+
+}
+
+.container1{
+    width: 14rem;
+    height: 6.5rem;
+    background-color: rgb(9, 228, 173);
+    
+    margin: 1rem;
+    border-radius: 0.5rem;
+
+    
+}
+
+.container1 img{
+    height: 6rem;
+    width: 6rem;
+    position: relative;
+    left: 6rem;
+    bottom: 5rem;
+
+}
+
+.container2{
+    width: 14rem;
+    height: 6.5rem;
+    background-color: rgb(9, 228, 173);
+    margin: 1rem;
+    border-radius: 0.5rem;
+    
+
+}
+
+.container2 img{
+    height: 6rem;
+    width: 6rem;
+    position: relative;
+    left: 6rem;
+    bottom: 5rem;
+}
+
+.container3{
+    width: 14rem;
+    height: 6.5rem;
+    background-color: rgb(9, 228, 173);
+    
+    margin: 1rem;
+    border-radius: 0.5rem;
+}
+
+.container3 img{
+    height: 6rem;
+    width: 6rem;
+    position: relative;
+    left: 6rem;
+    bottom: 5rem;
+}
+
+.container4{
+    width: 14rem;
+    height: 6.5rem;
+    background-color: rgb(252, 71, 71);
+    margin: 1rem;
+    border-radius: 0.5rem;
+    
+
+}
+
+.container4 img{
+    height: 6rem;
+    width: 6rem;
+    position: relative;
+    left: 6.4rem;
+    bottom: 3.3rem;
+}
+
+.container5{
+    width: 14rem;
+    height: 6.5rem;
+    background-color: rgb(252, 71, 71);
+    
+    margin: 1rem;
+    border-radius: 0.9rem;
+}
+
+.container5 img{
+    height: 6rem;
+    width: 6rem;
+    position: relative;
+    left: 6rem;
+    bottom: 3.3rem;
+}
+
+.container6{
+    width: 14rem;
+    height: 6.5rem;
+    background-color: rgb(252, 71, 71);
+    margin: 1rem;
+    border-radius: 0.9rem;
+    
+}
+
+.container6 img{
+    height: 6.5rem;
+    width: 7rem;
+    position: relative;
+    left: 6.5rem;
+    bottom: 5.7rem;
+}
+
+.container7{
+    width: 14rem;
+    height: 6.5rem;
+    background-color:rgb(102, 163, 243);
+    
+    margin: 1rem;
+    border-radius: 0.9rem;
+}
+
+.container7 img{
+    height: 6rem;
+    width: 6rem;
+    position: relative;
+    left: 5.5rem;
+    bottom: 3.3rem;
+}
+
+.container8{
+    width: 14rem;
+    height: 6.5rem;
+    background-color: rgb(102, 163, 243);
+    margin: 1rem;
+    border-radius: 0.9rem;
+    
+}
+
+.container8 img{
+    height: 6rem;
+    width: 6rem;
+    position: relative;
+    left: 6rem;
+    bottom: 3.5rem;
+}
+
+.container9{
+    width: 14rem;
+    height: 6.5rem;
+    background-color: rgb(102, 163, 243);
+    
+    margin: 1rem;
+    border-radius: 0.9rem;
+}
+
+.container9 img{
+    height: 6rem;
+    width: 6rem;
+    position: relative;
+    left: 6rem;
+    bottom: 3.1rem;
+}
+
+.container10{
+    width: 14rem;
+    height: 6.5rem;
+    background-color: rgb(218, 214, 23);
+    margin: 1rem;
+    border-radius: 0.5rem;
+    
+}
+
+.container10 img{
+    height: 6rem;
+    width: 6rem;
+    position: relative;
+    left: 6rem;
+    bottom: 3.5rem;
+}
