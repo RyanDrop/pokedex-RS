@@ -40,7 +40,12 @@ const fechPokemon = () => {
             imagem do pokemon trás
                 pokemon.sprites.back_default
                     retorna URL para tag img HTML
-         */
+         
+			imagem alta resolução
+				url + id do pokemon + .img
+					https://pokeres.bastionbot.org/images/pokemon/
+			
+		*/
         
 
     } );
