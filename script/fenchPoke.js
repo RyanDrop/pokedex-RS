@@ -42,7 +42,7 @@ const fechPokemon = () => {
                     retorna URL para tag img HTML
          
 			imagem alta resolução
-				url + id do pokemon + .img
+				url + id do pokemon + .png
 					https://pokeres.bastionbot.org/images/pokemon/
 			
 		*/
