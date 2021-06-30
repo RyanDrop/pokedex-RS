@@ -4,10 +4,18 @@
 
 ****************
 
-Projeto de Ryan-drop e samuelllr
-Projeto Pokedex WebApp
+### Projeto Pokedex WebApp
+<br/></br>
+<img src="img-readme.jpg"/>
+<br/><br/>
+Este é um Projeto proposto no servidor discord Aopa, Mundo! Com finalidade de conhecimento e desafio para nossos saberes para criar uma Pokedex utilizado a PokeAPI.
+
 
 ****************
 ### Atualização: 
  
  - 30/06/21
+ 
+### Atores:
+ - samuelllr
+ - Ryan.drop
