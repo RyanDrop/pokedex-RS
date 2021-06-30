@@ -10,4 +10,4 @@ Projeto Pokedex WebApp
 ****************
 ### Atualização: 
  
- -30/06/21
+ - 30/06/21
