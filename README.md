@@ -4,12 +4,14 @@
 
 ****************
 
-### Projeto Pokedex WebApp
+# Projeto Pokedex WebApp
 <br/><br/>
 <img src="Img-readme.jpeg"/>
 <br/><br/>
 Este é um Projeto proposto no servidor discord Aopa, Mundo! Com finalidade de conhecimento e desafio para nossos saberes para criar uma Pokedex utilizado a API PokeAPI.
 
+## Aopa Mundo!
+ - Convite para o servidor: https://discord.gg/fbRPr4btND
 
 ****************
 ### Atualização: 
