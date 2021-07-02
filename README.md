@@ -18,6 +18,6 @@ Este é um Projeto proposto no servidor discord Aopa, Mundo! Com finalidade de c
  
  - 30/06/21
  
-### Atores:
+### Autores:
  - samuelllr
  - Ryan.drop
