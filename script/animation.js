@@ -10,10 +10,10 @@ function trocarGifLoad(){
     img_load1.style.display = "none";
 }
 
-window.setTimeout( "trocarGifLoad()" , 6300 );
+window.setTimeout( "trocarGifLoad()" , 6900 );
 
 function trocarGifLoad2(){
     div_load.style.display = "none";
 }
 
-window.setTimeout( "trocarGifLoad2()" , 7300 );
+window.setTimeout( "trocarGifLoad2()" , 9000 );

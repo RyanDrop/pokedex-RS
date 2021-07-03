@@ -9,9 +9,8 @@
 
 body{
     font-size:62.5%;
-    
-    
 }
+
 h2{
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
@@ -43,19 +42,6 @@ p{
     height: 16px;
     width: 65px;
     border-radius: 1rem;
-}
-
-.poke img{
-    height: 7rem;
-    width: 7rem;
-    position: absolute;
-    right: 3rem;
-    top: 0rem;
-}
-
-#id{
-    height: 7rem;
-    width: 3rem;
 }
 
 .containers{
@@ -96,20 +82,27 @@ p{
     width: 100%;
     height: 100%;
     z-index: 1000;
+    
+    
 }
 
 #img-load1{
     position:absolute;
-    top:0px;left:0px;
-  width: 320px;
-  height: 300px;
-  border-top-color: #FFF;
-  z-index:2;
+    width: 12rem;
+    height: 12rem;
+    border-top-color: #FFF;
+    z-index:2;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%)
+    
 }#img-load2{
     position:absolute;
-    top:0px;left:0px;
-    width: 320px;
-    height: 300px;
+    width: 12rem;
+    height: 12rem;
     border-top-color: #FFF;
     z-index:1;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%)
   }
