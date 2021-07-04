@@ -1,19 +1,19 @@
 // file to animation app/web
 
 //VAR's
-
 var div_load = document.getElementById("div-load");
-var img_load1 = document.getElementById("img-load1");
-var img_load2 = document.getElementById("img-load2");
+var img_load = document.getElementById("img-load");
+//------------------------------------------------
 
-function trocarGifLoad(){
-    img_load1.style.display = "none";
-}
+// ANIMATE LOAD
+window.setTimeout( function(){
+    img_load.src = "img/loading-gifs/pikachu.gif";
+}, 6900 );
 
-window.setTimeout( "trocarGifLoad()" , 6900 );
-
-function trocarGifLoad2(){
-    div_load.style.display = "none";
-}
-
-window.setTimeout( "trocarGifLoad2()" , 9000 );
+window.setTimeout( function(){
+    div_load.style.transform = "scale(100)";
+    window.setTimeout(function(){
+        div_load.style.display = "none";
+    },100);
+}, 8900 );
+//------------------------------------------------
