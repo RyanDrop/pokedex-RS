@@ -14,7 +14,7 @@ Este é um Projeto proposto no servidor discord Aopa, Mundo! Com finalidade de c
  - Convite para o servidor: https://discord.gg/fbRPr4btND
 
 ****************
-### Atualização: 
+### Atualização do APK: 
  
  - 04/07/21
  

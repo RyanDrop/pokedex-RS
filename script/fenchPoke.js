@@ -2,6 +2,7 @@
 
 //VAR select id
 var idPoke = 25; //pikachu 25
+var pokeName ;
 
 const fechPokemon = () => {
 
@@ -15,6 +16,7 @@ const fechPokemon = () => {
             //nome do pokemon
         var namePoke = pokemon.name;
         console.log( "nome: " + namePoke );
+        pokeName = namePoke ;
 
             //abilidade 1 do pokemon
         var ability1 = pokemon.abilities[0].ability.name;
