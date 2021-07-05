@@ -20,4 +20,4 @@ Este é um Projeto proposto no servidor discord Aopa, Mundo! Com finalidade de c
  
 ### Autores:
  - samuelllr
- - Ryan.drop
+ - Ryan-drop
