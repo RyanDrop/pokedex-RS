@@ -17,3 +17,16 @@ window.setTimeout( function(){
     },100);
 }, 8900 );
 //------------------------------------------------
+
+// LINHA AZUL MENU
+var btnContainer = document.getElementById('menuapp');
+var btn = btnContainer.getElementsByClassName('btn');
+
+for(var i=0; i<btn.length; i++){
+    btns[i].addEventListener('click', function(){
+        var current = document.getElementsByClassName('active');
+        current[0].className = current[0].className.replace('active');
+        this.className += ' active';
+    })
+}
+//------------------------------------------------

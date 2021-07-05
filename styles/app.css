@@ -35,12 +35,12 @@ p{
     font-size: 0.8rem;
     font-weight: 500;
     margin-left: 1rem;
-    color: white;
-    background-color: rgba(255, 255, 255, 0.3);
+    color: rgb(255, 255, 255);
+    background-color: rgba(105, 105, 105, 0.2);
     text-align: center;
     
     height: 16px;
-    width: 65px;
+    width: 70px;
     border-radius: 1rem;
 }
 
@@ -55,7 +55,7 @@ p{
 .container1{
     width: 14rem;
     height: 6.5rem;
-    background-color: rgb(9, 228, 173);
+    background-color: rgb(238, 224, 32);
     
     margin: 1rem;
     border-radius: 0.5rem;
@@ -94,4 +94,41 @@ p{
     left:50%;
     top:50%;
     transform: translate(-50%,-50%)
+}
+
+
+/*Menu*/
+
+.menu{
+    position:absolute;
+    top:93.92%;
+    height: 6vh;
+    width: 100vw;
+    background-color: rgba(189, 189, 189, 0.171);
+    border-top: solid 1px;
+    border-color: rgba(0, 0, 0, 0.089);
+    text-align: center;
+    place-items: center;
+
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu img{
+    height: 3.5vh;
+}
+
+.menu a {
+    color: #252525;
+    transition: 0.5 ease;
+}
+
+.menu .active{
+    color:rgb(126, 158, 255);
+    border-bottom: .2rem solid rgb(105, 137, 235);
+    width: 100%;
+    border-radius: 1px;
+    transition: 0.5 ease;
 }
