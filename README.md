@@ -16,8 +16,9 @@ Este é um Projeto proposto no servidor discord Aopa, Mundo! Com finalidade de c
 ****************
 ### Atualização do APK: 
  
- - 04/07/21
- 
+ - 06/07/21
+ - version: 0.2 ALFA.
+
 ### Autores:
  - samuelllr
  - Ryan-drop
