@@ -54,7 +54,7 @@ h2{
 }
 
 .container1{
-    width: 14rem;
+    width: 17rem;
     height: 6.5rem;
     background-color: rgb(238, 224, 32);
     
@@ -67,7 +67,7 @@ h2{
     height: 6rem;
     width: 6rem;
     position: relative;
-    left: 6rem;
+    left: 8rem;
     bottom: 5rem;
     z-index:1;
 }
@@ -104,7 +104,7 @@ h2{
     top:93.92%;
     height: 6vh;
     width: 100vw;
-    background-color: rgba(189, 189, 189, 0.171);
+    background-color: rgba(221, 221, 221, 0.171);
     border-top: solid 1px;
     border-color: rgba(0, 0, 0, 0.089);
     text-align: center;
@@ -121,23 +121,6 @@ h2{
 .menu img{
     height: 3.5vh;
     cursor:pointer;
-}
-
-.menu .active{
-    color:rgb(126, 158, 255);
-    border-bottom: .2rem solid rgb(105, 137, 235);
-    width: 100%;
-    border-radius: 1px;
-    transition: 0.5 ease;
-}
-
-.menu .line{
-    position:absolute;
-    top:5vh;
-    left:0vw;
-    width:50px;
-    height:5px;
-    background-color: #0af;
 }
 
 /*DIV INFO*/
