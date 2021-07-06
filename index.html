@@ -15,13 +15,15 @@
     <!-- DIV DE CARREGAMENTO -->
     <div id="div-load"><img id="img-load" src="img/loading-gifs/pikachuDormindo.gif"/></div>
 
-    <!--HEADER-->
-    <header>
-        <h2>Pokedex</h2>
-    </header>
-    <!--CORPO - SECTION-->
-     <section class="content">
+     <!--CORPO - SECTION-->
+    <input type="checkbox" id='darkmodeToggle'>
+    <main>
+          <!--HEADER-->
+        <header>
+            <h2>Pokedex</h2>
+        </header>
     
+     <!--Tronco-->
         <nav>
             <div class="containers">
                 <div class="container1">
@@ -34,39 +36,48 @@
             </div>
         </nav>
     
-    </section>
 
-    <!--FOOTER-->
-    <footer>
-        <div class="menu" id='menuapp'>
-            <li>
-                <!--NOTURNO-->
-                <img src="img/img-icons/lua.svg" alt="noturno" onclick="activeMenu(1)"/>
-            </li>
-            <li>
-                <!--HOME-->
-                <img src="img/img-icons/home.svg" alt="home" onclick="activeMenu(2)"/>
-            </li>
-            <li>
-                <!--INFO-->
-                <img src="img/img-icons/info.svg" alt="info" onclick="activeMenu(3)"/>
-            </li>
-        </div>
+        <!--FOOTER-->
+        <footer>
+            <div class="menu" id='menuapp'>
+                <li>
+                    <!--NOTURNO-->
+                    <label for='darkmodeToggle' class='darkmodeLabel'><img src="img/img-icons/lua.svg" alt="noturno" onclick="activeMenu(1)"/></label>
+                </li>
+                <li>
+                    <!--HOME-->
+                    <img src="img/img-icons/home.svg" alt="home" onclick="activeMenu(2)"/>
+                </li>
+                <li>
+                    <!--INFO-->
+                    <img src="img/img-icons/info.svg" alt="info" onclick="activeMenu(3)"/>
+                </li>
+            </div>
 
-        <!--INFO DIV ALFA-->
-        <div class="info" id="info">
+            <!--INFO DIV ALFA-->
+            <div class="info" id="info">
 
-            <!--CONTEUDO INFO-->
-            <h3>Ryan e Samuel</h3>
+                <!--CONTEUDO INFO-->
+                <h3>Projeto Pokedex WebApp</h3>
+                <br>
+                <p>Este é um Projeto proposto no servidor discord Aopa, Mundo! Com finalidade de conhecimento e desafio para nossos saberes para criar uma Pokedex utilizado a API PokeAPI.</p>
+                <br>
+                <ul>
+                    <li><h1>Aopa, Mundo!</h1><a href="https://discord.gg/fZ7pc7ptHC" target="_blank"><img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" target="_blank"></a></li>
+                </ul>
+                    <h3>Autores</h3>
+                    <h1>Ryan-drop</h1><a href="https://github.com/Ryan-drop" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>
+                    <h1>samuelllr</h1><a href="https://github.com/samuelllr" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>
+                
+            </div>
 
-        </div>
+        </footer>
 
-    </footer>
-
-    <!--SCRIPT TAG-->
-    <script src="script/fenchPoke.js"></script>
-    <script src="script/animation.js"></script>
-    <script src="script/engine.js"></script>
-    
+        <!--SCRIPT TAG-->
+        <script src="script/fenchPoke.js"></script>
+        <script src="script/animation.js"></script>
+        <script src="script/engine.js"></script>
+    </main>
+        
 </body>
 </html>

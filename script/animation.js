@@ -26,21 +26,21 @@ var modeNoturn = 0;
 
 function activeMenu( mode ){
     switch( mode ){
-        case 1: 
-            if( modeNoturn == 0 ){
-                document.body.style.backgroundColor = "#222";
-                infoDiv.style.backgroundColor = "#222";
-                modeNoturn = 1 ;
-            }else{
-                document.body.style.backgroundColor = "#fff";
-                infoDiv.style.backgroundColor = "#fff";
-                modeNoturn = 0 ;
-            }
-        break;
+        //case 1: 
+            //if( modeNoturn == 0 ){
+                //document.body.style.backgroundColor = "#222";
+               // infoDiv.style.backgroundColor = "#222";
+               // modeNoturn = 1 ;
+            //}else{
+               // document.body.style.backgroundColor = "#fff";
+               // infoDiv.style.backgroundColor = "#fff";
+                //modeNoturn = 0 ;
+           // }
+        //break;
         case 2:
             infoDiv.style.top = "100%" ;
         break;
-        case 3: infoDiv.style.top = "30vh"; break;
+        case 3: infoDiv.style.top = "0vh"; break;
     }
 }
 //------------------------------------------------
