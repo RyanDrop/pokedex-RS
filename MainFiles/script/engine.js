@@ -4,7 +4,7 @@
 var namePoke;
 var nav = document.getElementById("nav");
 
-function engine( idPoke ){
+function engine( idPoke , color ){
 
     var url = 'https://pokeapi.co/api/v2/pokemon/' + idPoke ; 
     fetch( url ).then( response => response.json()).then( pokemon => { 
@@ -18,8 +18,11 @@ function engine( idPoke ){
 
         var container = document.createElement("div");
         var clase2 = document.createAttribute("class");
+        var containerStyle = document.createAttribute("style");
         clase2.value = "container";
+        containerStyle.value = "background-color:" + color + ";" ;
         container.setAttributeNode( clase2 );
+        container.setAttributeNode( containerStyle );
 
         var h4  = document.createElement("h4");
         var br = document.createElement("br");
