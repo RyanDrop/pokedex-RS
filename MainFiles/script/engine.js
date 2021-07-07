@@ -33,7 +33,10 @@ function engine( idPoke ){
 
         h4.innerHTML = pokemon.name;
         p.innerHTML = pokemon.types[0].type.name;
-        ptype.innerHTML = pokemon.types[1].type.name;
+        
+        if( pokemon.types[1] != undefined||null ){
+            ptype.innerHTML = pokemon.types[1].type.name;
+        }
 
         container.appendChild( h4 );
         container.appendChild( p );
