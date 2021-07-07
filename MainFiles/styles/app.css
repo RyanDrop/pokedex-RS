@@ -12,6 +12,7 @@
     --background: #fff;
     --color-text-cont:rgb(255, 255, 255);
     --containers: rgb(255, 231, 15);
+    --menu: rgb(241, 241, 241);
 }
 
 body{
@@ -127,9 +128,9 @@ h2{
     top:93.92%;
     height: 6vh;
     width: 100vw;
-    background-color: rgba(221, 221, 221, 0.171);
+    background-color: var(--menu);
     border-top: solid 1px;
-    border-color: rgba(0, 0, 0, 0.089);
+    border-color: rgba(95, 95, 95, 0.884);
     text-align: center;
     place-items: center;
 
@@ -148,8 +149,9 @@ h2{
 #darkmodeToggle:checked + main{
     --color-text: rgb(216, 216, 216);
     --background: rgb(36, 36, 36);
-    --color-text-cont:rgb(216, 216, 216);
+    --color-text-cont:rgb(0, 0, 0);
     --containers: rgba(255, 230, 0, 0.699);
+    --menu:rgb(56, 56, 56);
 
     background: var(--background);
     color:var(--color-text);
