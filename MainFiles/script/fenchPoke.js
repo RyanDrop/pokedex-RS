@@ -1,30 +1,30 @@
-// código de busca de dados em formato JSON
+/* código de busca de dados em formato JSON
 
 //VAR select id
-var idPoke = 25; //pikachu 25
-var pokeName ;
+var idPoke = 1; //pikachu 25
+var pokeName = [];
 
-const fechPokemon = () => {
+function fechPokemon( idpoke ){
 
-    const url = 'https://pokeapi.co/api/v2/pokemon/' + idPoke ; 
+    var url = 'https://pokeapi.co/api/v2/pokemon/' + i ; 
     fetch( url ).then( response => response.json()).then( pokemon => { 
         
-        console.log(pokemon); 
+        //console.log(pokemon); 
         
         //pegando dados da PokeAPI
 
             //nome do pokemon
         var namePoke = pokemon.name;
-        console.log( "nome: " + namePoke );
-        pokeName = namePoke ;
+        //console.log( "nome: " + namePoke );
+        pokeName.push( namePoke );
 
             //abilidade 1 do pokemon
-        var ability1 = pokemon.abilities[0].ability.name;
-        console.log( "Abilidade 1: " + ability1 );
+       // var ability1 = pokemon.abilities[0].ability.name;
+        //console.log( "Abilidade 1: " + ability1 );
 
             //abilidade 2 do pokemon
-         var ability2 = pokemon.abilities[1].ability.name;
-         console.log( "Abilidade 1: " + ability2 );
+         //var ability2 = pokemon.abilities[1].ability.name;
+         //console.log( "Abilidade 1: " + ability2 );
 
          /*caminhos JSON 
 
@@ -47,11 +47,13 @@ const fechPokemon = () => {
 				url + id do pokemon + .png
 					https://pokeres.bastionbot.org/images/pokemon/
 			
-		*/
+		*
         
 
     } );
 
+    console.log( pokeName );
+
 }
 
-fechPokemon();
+fechPokemon();*/

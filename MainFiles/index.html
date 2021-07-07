@@ -18,17 +18,17 @@
      <!--CORPO - SECTION-->
     <input type="checkbox" id='darkmodeToggle'>
     <main>
-          <!--HEADER-->
+    <!--HEADER-->
         <header>
             <h2>Pokedex</h2>
         </header>
     
      <!--Tronco-->
-        <nav>
+        <nav id="nav">
             <div class="containers">
-                <div class="container1">
-                    <h4 id="pokeName">Pikachu</h4>
-                    <p id="pokeType">Elétrico</p>
+                <div class="container">
+                    <h4>Pikachu</h4>
+                    <p>Elétrico</p>
                     <br>
                     <p>Venenoso</p>
                     <img class='foto'id="foto" src="img/loading-gifs/Bulbasaur.gif">
@@ -42,15 +42,15 @@
             <div class="menu" id='menuapp'>
                 <li>
                     <!--NOTURNO-->
-                    <label for='darkmodeToggle' class='darkmodeLabel'><img src="img/img-icons/lua.svg" alt="noturno" onclick="activeMenu(1)"/></label>
+                    <label for='darkmodeToggle' class='darkmodeLabel'><img src="img/img-icons/lua.svg" alt="noturno"/></label>
                 </li>
                 <li>
                     <!--HOME-->
-                    <img src="img/img-icons/home.svg" alt="home" onclick="activeMenu(2)"/>
+                    <img src="img/img-icons/home.svg" alt="home" onclick="activeMenu(1)"/>
                 </li>
                 <li>
                     <!--INFO-->
-                    <img src="img/img-icons/info.svg" alt="info" onclick="activeMenu(3)"/>
+                    <img src="img/img-icons/info.svg" alt="info" onclick="activeMenu(2)"/>
                 </li>
             </div>
 
@@ -77,6 +77,7 @@
         <script src="script/fenchPoke.js"></script>
         <script src="script/animation.js"></script>
         <script src="script/engine.js"></script>
+        <script src="script/data.js"></script>
     </main>
         
 </body>

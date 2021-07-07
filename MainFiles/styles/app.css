@@ -38,7 +38,7 @@ h2{
     margin-left: 1rem;
     color:var(--color-text);
 }
-.container1 h4{
+.container h4{
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     font-weight: 700;
@@ -46,9 +46,10 @@ h2{
     margin-top: 1rem;
     color: var(--color-text-cont);
     margin-bottom: 0.5rem;
+    text-transform: capitalize;
 }
 
-.container1 p{
+.container p{
     font-family: 'Poppins', sans-serif;
     font-size: 0.8rem;
     font-weight: 500;
@@ -60,6 +61,8 @@ h2{
     height: 16px;
     width: 70px;
     border-radius: 1rem;
+
+    text-transform: capitalize;
 }
 
 .containers{
@@ -70,7 +73,7 @@ h2{
 
 }
 
-.container1{
+.container{
     width: 17rem;
     height: 6.5rem;
     background-color: var(--containers);
@@ -80,7 +83,7 @@ h2{
 
 }
 
-.container1 img{
+.container img{
     height: 6rem;
     width: 6rem;
     position: relative;
@@ -117,7 +120,7 @@ h2{
 /*Menu*/
 
 .menu{
-    position:absolute;
+    position:fixed;
     top:93.92%;
     height: 6vh;
     width: 100vw;
