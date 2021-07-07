@@ -81,10 +81,8 @@ h2{
     width: 17rem;
     height: 6.5rem;
     background-color: var(--containers);
-    
     margin: 1rem;
     border-radius: 0.5rem;
-
 }
 
 .container img{
