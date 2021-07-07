@@ -9,6 +9,8 @@ function engine( idPoke ){
     var url = 'https://pokeapi.co/api/v2/pokemon/' + idPoke ; 
     fetch( url ).then( response => response.json()).then( pokemon => { 
 
+        console.log( pokemon );
+
         var containers = document.createElement("div");
         var clase = document.createAttribute("class");
         clase.value = "containers";
@@ -30,7 +32,8 @@ function engine( idPoke ){
         img.setAttributeNode( imgSrc );
 
         h4.innerHTML = pokemon.name;
-        //p.innerHTML = pokemon.type;
+        p.innerHTML = pokemon.types[0].type.name;
+        ptype.innerHTML = pokemon.types[1].type.name;
 
         container.appendChild( h4 );
         container.appendChild( p );
