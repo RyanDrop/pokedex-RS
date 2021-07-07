@@ -80,6 +80,7 @@ h2{
 .container{
     width: 17rem;
     height: 6.5rem;
+    
     background-color: var(--containers);
     
     margin: 1rem;
@@ -149,7 +150,7 @@ h2{
 #darkmodeToggle:checked + main{
     --color-text: rgb(216, 216, 216);
     --background: rgb(36, 36, 36);
-    --color-text-cont:rgb(0, 0, 0);
+    --color-text-cont:rgb(236, 236, 236);
     --containers: rgba(255, 230, 0, 0.699);
     --menu:rgb(56, 56, 56);
 
