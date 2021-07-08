@@ -10,7 +10,7 @@ function engine( idPoke , color ){
     var url = 'https://pokeapi.co/api/v2/pokemon/' + idPoke ; 
     fetch( url ).then( response => response.json()).then( pokemon => { 
 
-        console.log( pokemon );
+        //console.log( pokemon );
 
         var container = document.createElement("div");
         var clase2 = document.createAttribute("class");
@@ -29,8 +29,8 @@ function engine( idPoke , color ){
         var img = document.createElement("img");
         var imgSrc = document.createAttribute("src");
         //imgSrc.value = "https://pokeres.bastionbot.org/images/pokemon/" + idPoke + ".png";
-        imgSrc.value = pokemon.sprites.front_default;
-        img.setAttributeNode( imgSrc );
+        //imgSrc.value = pokemon.sprites.front_default;
+        //img.setAttributeNode( imgSrc );
 
         var classpp1 = document.createAttribute("class");
         var classpp2 = document.createAttribute("class");
@@ -70,7 +70,7 @@ function engine( idPoke , color ){
         containers.appendChild( container );
 
         nav.appendChild( containers );
-
+        
     });
 
 }

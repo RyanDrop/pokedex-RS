@@ -164,3 +164,20 @@ for( i = 1 ; i < 152 ; i++ ){
     engine( i , color );
 }
 
+/*var contColor = -1 ;
+
+function delay(){
+	
+	
+	
+}
+
+window.setInterval( "delay()" , 1000 );
+
+for( i = 1 ; i < 152 ; i++ ){
+	contColor++;
+	var color = colors[ contColor ];
+	if( color == null||undefined||"" ){ color = "#555" ; }
+    engine( i , color );
+}*/
+
