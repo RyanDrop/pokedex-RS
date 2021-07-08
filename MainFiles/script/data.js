@@ -328,4 +328,4 @@ function delay( ){
    
 }
 
-var loop = window.setInterval( "delay()" , 200 );
+var loop = window.setInterval( "delay()" , 150 );
