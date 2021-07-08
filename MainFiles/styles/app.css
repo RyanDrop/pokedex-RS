@@ -19,6 +19,7 @@ body{
     font-size:62.5%;
     transition: 0.2s;
     background:var(--background);
+    overflow-y:hidden;
 }
 
 main{

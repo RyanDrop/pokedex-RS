@@ -3,6 +3,7 @@
 //VAR´s Engine
 var namePoke;
 var nav = document.getElementById("nav");
+var containers = document.getElementById("containers");
 
 function engine( idPoke , color ){
 
@@ -10,11 +11,6 @@ function engine( idPoke , color ){
     fetch( url ).then( response => response.json()).then( pokemon => { 
 
         console.log( pokemon );
-
-        var containers = document.createElement("div");
-        var clase = document.createAttribute("class");
-        clase.value = "containers";
-        containers.setAttributeNode( clase );
 
         var container = document.createElement("div");
         var clase2 = document.createAttribute("class");
@@ -31,7 +27,8 @@ function engine( idPoke , color ){
 
         var img = document.createElement("img");
         var imgSrc = document.createAttribute("src");
-        imgSrc.value = "https://pokeres.bastionbot.org/images/pokemon/" + idPoke + ".png";
+        //imgSrc.value = "https://pokeres.bastionbot.org/images/pokemon/" + idPoke + ".png";
+        imgSrc.value = pokemon.sprites.front_default;
         img.setAttributeNode( imgSrc );
 
         h4.innerHTML = pokemon.name;
@@ -39,6 +36,9 @@ function engine( idPoke , color ){
         
         if( pokemon.types[1] != undefined||null ){
             ptype.innerHTML = pokemon.types[1].type.name;
+        }else{
+            ptype.style.display = "none" ;
+            img.style.marginTop = "15px";
         }
 
         container.appendChild( h4 );

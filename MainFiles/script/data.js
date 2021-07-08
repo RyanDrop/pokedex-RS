@@ -151,9 +151,7 @@ var colors = [
 	"#6982F1" ,
 	"#F9AD24" ,
 	"#A05ED0" ,
-	"#F1A5FF" ,
-
-
+	"#F1A5FF" 
 ];
 
 
@@ -162,10 +160,7 @@ var contColor = -1 ;
 for( i = 1 ; i < 152 ; i++ ){
 	contColor++;
 	var color = colors[ contColor ];
-	if( color == null||undefined||"" ){
-		color = "#555" ;
-		console.log( "Faltou cor no pokemon n°: " + i );
-	}
+	if( color == null||undefined||"" ){ color = "#555" ; }
     engine( i , color );
 }
 

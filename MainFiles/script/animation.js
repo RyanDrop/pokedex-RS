@@ -16,6 +16,7 @@ window.setTimeout( function(){
     div_load.style.transform = "scale(100)";
     window.setTimeout(function(){
         div_load.style.display = "none";
+        document.body.style.overflowY = "visible";
     },100);
 }, 8900 );
 //------------------------------------------------
