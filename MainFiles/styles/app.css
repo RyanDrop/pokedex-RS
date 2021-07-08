@@ -71,6 +71,16 @@ h2{
     text-transform: capitalize;
 }
 
+.container p .number{
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-text-cont);
+    background-color: rgba(105, 105, 105, 0.2);
+    align-items: center;
+    height: 16px;
+    width: 70px;
+    border-radius: 1rem;
+}
+
 .containers{
     display:flex;
     flex-wrap: wrap;
@@ -82,7 +92,7 @@ h2{
 }
 
 .container{
-    width: 17rem;
+    width: 18rem;
     height: 6.5rem;
     background-color: var(--containers);
     margin: 1rem;
@@ -94,7 +104,7 @@ h2{
     width: 6rem;
     position: relative;
     left: 8rem;
-    bottom: 5rem;
+    bottom: 5.1rem;
     z-index:1;
 }
 

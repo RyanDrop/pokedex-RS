@@ -32,8 +32,8 @@ function engine( idPoke , color , WH ){
         var img = document.createElement("img");
         var imgSrc = document.createAttribute("src");
         var styleImg = document.createAttribute("style");
-        //imgSrc.value = "https://pokeres.bastionbot.org/images/pokemon/" + idPoke + ".png";
-        imgSrc.value = pokemon.sprites.front_default;
+        imgSrc.value = "https://pokeres.bastionbot.org/images/pokemon/" + idPoke + ".png";
+        //imgSrc.value = pokemon.sprites.front_default;
         
         if( WH == undefined||null||"" ){ WH = 6 }
         styleImg.value = "width:" + WH + "rem;height:" + WH + "rem;";
