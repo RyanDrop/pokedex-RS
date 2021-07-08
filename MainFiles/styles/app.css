@@ -50,12 +50,15 @@ h2{
     color: var(--color-text-cont);
     margin-bottom: 0.5rem;
     text-transform: capitalize;
+
+    display:inline-block;
 }
 
-.container p{
+.container p.pp{
     font-family: 'Poppins', sans-serif;
     font-size: 0.8rem;
     font-weight: 500;
+    margin-top:8px;
     margin-left: 1rem;
     color: var(--color-text-cont);
     background-color: rgba(105, 105, 105, 0.2);
@@ -93,6 +96,15 @@ h2{
     left: 8rem;
     bottom: 5rem;
     z-index:1;
+}
+
+.container .number{
+    text-align: right;
+    font-size: 14pt;
+    margin-top: -30px;
+    margin-right: 5px;;
+    color: var( --color-text-cont );
+    display: block;
 }
 
 /*LOADE*/

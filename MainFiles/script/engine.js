@@ -21,18 +21,37 @@ function engine( idPoke , color ){
         container.setAttributeNode( containerStyle );
 
         var h4  = document.createElement("h4");
+        var number = document.createElement("p");
         var br = document.createElement("br");
         var p = document.createElement("p");
         var ptype = document.createElement("p"); 
 
         var img = document.createElement("img");
         var imgSrc = document.createAttribute("src");
-        //imgSrc.value = "https://pokeres.bastionbot.org/images/pokemon/" + idPoke + ".png";
-        imgSrc.value = pokemon.sprites.front_default;
+        imgSrc.value = "https://pokeres.bastionbot.org/images/pokemon/" + idPoke + ".png";
+        //imgSrc.value = pokemon.sprites.front_default;
         img.setAttributeNode( imgSrc );
+
+        var classpp1 = document.createAttribute("class");
+        var classpp2 = document.createAttribute("class");
+        var classpp3 = document.createAttribute("class");
+        classpp1.value = "pp";
+        classpp2.value = "pp";
+        classpp3.value = "number";
+        p.setAttributeNode( classpp1 );
+        ptype.setAttributeNode( classpp2 );
+        number.setAttributeNode( classpp3 );
 
         h4.innerHTML = pokemon.name;
         p.innerHTML = pokemon.types[0].type.name;
+
+        if( idPoke < 10 ){
+            number.innerHTML = "#00" + idPoke ;
+        }if( ( idPoke > 10 )&&( idPoke < 100 ) ){
+            number.innerHTML = "#0" + idPoke ;
+        }if( idPoke > 100 ){
+            number.innerHTML = "#" + idPoke ;
+        }
         
         if( pokemon.types[1] != undefined||null ){
             ptype.innerHTML = pokemon.types[1].type.name;
@@ -42,6 +61,7 @@ function engine( idPoke , color ){
         }
 
         container.appendChild( h4 );
+        container.appendChild( number );
         container.appendChild( p );
         container.appendChild( br );
         container.appendChild( ptype );
