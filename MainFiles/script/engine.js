@@ -47,9 +47,9 @@ function engine( idPoke , color ){
 
         if( idPoke < 10 ){
             number.innerHTML = "#00" + idPoke ;
-        }if( ( idPoke > 10 )&&( idPoke < 100 ) ){
+        }if( ( idPoke >= 10 )&&( idPoke < 100 ) ){
             number.innerHTML = "#0" + idPoke ;
-        }if( idPoke > 100 ){
+        }if( idPoke >= 100 ){
             number.innerHTML = "#" + idPoke ;
         }
         
