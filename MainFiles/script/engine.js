@@ -5,7 +5,7 @@ var namePoke;
 var nav = document.getElementById("nav");
 var containers = document.getElementById("containers");
 
-function engine( idPoke , color ){
+function engine( idPoke , color , WH ){
 
     var url = 'https://pokeapi.co/api/v2/pokemon/' + idPoke ; 
     fetch( url ).then( response => response.json()).then( pokemon => { 
@@ -16,7 +16,10 @@ function engine( idPoke , color ){
         var clase2 = document.createAttribute("class");
         var containerStyle = document.createAttribute("style");
         clase2.value = "container";
+        
+        if( color == null||undefined||"" ){ color = "#555" ; }
         containerStyle.value = "background-color:" + color + ";" ;
+        
         container.setAttributeNode( clase2 );
         container.setAttributeNode( containerStyle );
 
@@ -28,8 +31,14 @@ function engine( idPoke , color ){
 
         var img = document.createElement("img");
         var imgSrc = document.createAttribute("src");
-        imgSrc.value = "https://pokeres.bastionbot.org/images/pokemon/" + idPoke + ".png";
-        //imgSrc.value = pokemon.sprites.front_default;
+        var styleImg = document.createAttribute("style");
+        //imgSrc.value = "https://pokeres.bastionbot.org/images/pokemon/" + idPoke + ".png";
+        imgSrc.value = pokemon.sprites.front_default;
+        
+        if( WH == undefined||null||"" ){ WH = 6 }
+        styleImg.value = "width:" + WH + "rem;height:" + WH + "rem;";
+        
+        img.setAttributeNode( styleImg );
         img.setAttributeNode( imgSrc );
 
         var classpp1 = document.createAttribute("class");

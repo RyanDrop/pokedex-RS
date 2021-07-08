@@ -154,30 +154,178 @@ var colors = [
 	"#F1A5FF" 
 ];
 
+// REM img Width Height
+
+var wh = [ 
+	 , 		//1
+	 , 
+	 ,
+	 , 
+	 , 
+	 ,
+	 , 
+	 , 
+	 ,
+	 ,     	//10
+	 , 
+	 ,
+	 , 
+	 , 
+	 ,
+	 , 
+	 , 
+	 ,
+	 , 
+	 , 		//20
+	 ,
+	 , 
+	 , 
+	 ,
+	 , 
+	 , 
+	 ,
+	 , 
+	 ,
+	 , 		//30
+	 , 
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 , 		//40
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 , 		//50
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 , 		//60
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 , 		//70
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 , 		//80
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 , 		//90
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 , 		//100
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 , 		//110
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 , 		//120
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 , 		//130
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 , 		//140
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 ,
+	 	  //----151
+];
+
+
 
 //------------------------------------------------------------------
-/*var contColor = -1 ;
-for( i = 1 ; i < 152 ; i++ ){
-	contColor++;
-	var color = colors[ contColor ];
-	if( color == null||undefined||"" ){ color = "#555" ; }
-    engine( i , color );
-}*/
-
-var contColor = -1 ;
+var cont = -1 ;
 var i = 0;
 
 function delay( ){
 	
 	if( i > 149 ){ clearInterval( loop ); }
 	
-	contColor++;
+	cont++;
 	i++;
-	var color = colors[ contColor ];
-	if( color == null||undefined||"" ){ color = "#555" ; }
-    engine( i , color );
-    
-	
+	var color = colors[ cont ];
+	var rem = wh[ cont ];
+    engine( i , color , rem );
+   
 }
 
-var loop = window.setInterval( "delay()" , 100 );
+var loop = window.setInterval( "delay()" , 200 );
