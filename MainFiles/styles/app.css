@@ -71,14 +71,23 @@ h2{
     text-transform: capitalize;
 }
 
-.container p .number{
+.container p.number{
     font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-top:8px;
+    margin-left: 1rem;
     color: var(--color-text-cont);
     background-color: rgba(105, 105, 105, 0.2);
     align-items: center;
-    height: 16px;
-    width: 70px;
+    position: absolute;
+    left: 15.5rem;
+    
+    height: 22px;
+    width: 50px;
     border-radius: 1rem;
+
+    text-transform: capitalize;
 }
 
 .containers{
@@ -104,18 +113,11 @@ h2{
     width: 6rem;
     position: relative;
     left: 8rem;
-    bottom: 5.1rem;
+    bottom: 5.7rem;
     z-index:1;
 }
 
-.container .number{
-    text-align: right;
-    font-size: 14pt;
-    margin-top: -30px;
-    margin-right: 5px;;
-    color: var( --color-text-cont );
-    display: block;
-}
+
 
 /*LOADE*/
 
