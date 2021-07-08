@@ -28,8 +28,8 @@ function engine( idPoke , color ){
 
         var img = document.createElement("img");
         var imgSrc = document.createAttribute("src");
-        imgSrc.value = "https://pokeres.bastionbot.org/images/pokemon/" + idPoke + ".png";
-        //imgSrc.value = pokemon.sprites.front_default;
+        //imgSrc.value = "https://pokeres.bastionbot.org/images/pokemon/" + idPoke + ".png";
+        imgSrc.value = pokemon.sprites.front_default;
         img.setAttributeNode( imgSrc );
 
         var classpp1 = document.createAttribute("class");
