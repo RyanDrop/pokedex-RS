@@ -167,9 +167,9 @@ for( i = 1 ; i < 152 ; i++ ){
 var contColor = -1 ;
 var i = 0;
 
-function delay(){
+function delay( ){
 	
-	 if( i > 151 ){ clearInterval( loop ); }
+	if( i > 149 ){ clearInterval( loop ); }
 	
 	contColor++;
 	i++;
@@ -180,4 +180,4 @@ function delay(){
 	
 }
 
-var loop = window.setInterval( "delay()" , 500 );
+var loop = window.setInterval( "delay()" , 100 );
