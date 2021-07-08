@@ -156,24 +156,7 @@ var colors = [
 
 
 //------------------------------------------------------------------
-var contColor = -1 ;
-for( i = 1 ; i < 152 ; i++ ){
-	contColor++;
-	var color = colors[ contColor ];
-	if( color == null||undefined||"" ){ color = "#555" ; }
-    engine( i , color );
-}
-
 /*var contColor = -1 ;
-
-function delay(){
-	
-	
-	
-}
-
-window.setInterval( "delay()" , 1000 );
-
 for( i = 1 ; i < 152 ; i++ ){
 	contColor++;
 	var color = colors[ contColor ];
@@ -181,3 +164,20 @@ for( i = 1 ; i < 152 ; i++ ){
     engine( i , color );
 }*/
 
+var contColor = -1 ;
+var i = 0;
+
+function delay(){
+	
+	 if( i > 151 ){ clearInterval( loop ); }
+	
+	contColor++;
+	i++;
+	var color = colors[ contColor ];
+	if( color == null||undefined||"" ){ color = "#555" ; }
+    engine( i , color );
+    
+	
+}
+
+var loop = window.setInterval( "delay()" , 500 );
