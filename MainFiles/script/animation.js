@@ -57,6 +57,6 @@ function pokeinfoF( id ){
     pokeinfo.style.top = "0rem" ;
     pokeinfo.style.backgroundColor = colors[ id-1 ]; 
     var idimg = document.getElementById( "pokeImg"+id );
-    idimg.style = "z-index:4;width:auto;height:30vh;position:fixed;top:37%;left:50%;transform: translate(-37%,-50%);" ;
+    idimg.style = "z-index:4;width:auto;height:33vh;position:fixed;top:40%;left:47%;transform: translate(-40%,-47%);" ;
     armazemIDimg.push( "pokeImg" + id );
 }
