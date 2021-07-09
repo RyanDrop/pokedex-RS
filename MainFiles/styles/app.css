@@ -276,3 +276,43 @@ footer .pokeinfo .secundaria{
     background: var(--background);
     border-radius: 30px 30px 0px 0px;
 }
+
+footer .pokeinfo .principal h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 5vh;
+    font-weight: 700;
+    margin-left: 5vw;
+    margin-top: 3vh;
+    color: var(--color-text-cont);
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+
+    display:inline-block;
+}
+
+footer .pokeinfo .principal span.pp{
+    font-family: 'Rubik', sans-serif;
+    font-size: 3vh;
+    font-weight: 500;
+    color: var(--color-text-cont);
+    background-color: rgba(105, 105, 105, 0.2);
+    border-radius: 2rem;
+    position: relative;
+    left:4vw;
+    margin-left: 1vw;
+    text-transform: capitalize;
+}
+
+footer .pokeinfo .principal span.number{
+    font-family: 'Rubik', sans-serif;
+    font-size:3vh;
+    font-weight: 500;
+    position: absolute;
+    left: 84%;
+    
+    color: var(--color-text-cont);
+    background-color: rgba(105, 105, 105, 0.2);
+    border-radius: 2rem;
+
+    text-transform: capitalize;
+}
