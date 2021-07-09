@@ -15,12 +15,18 @@ function engine( idPoke , color , WH ){
         var container = document.createElement("div");
         var clase2 = document.createAttribute("class");
         var containerStyle = document.createAttribute("style");
+        var onTouch = document.createAttribute("ontouchstart");
+        var idcontainer = document.createAttribute("id");
         clase2.value = "container";
+        onTouch.value = "pokeinfoF("+idPoke+")";
+        idcontainer.value = "poke" + idPoke ;
         
         if( color == null||undefined||"" ){ color = "#555" ; }
         containerStyle.value = "background-color:" + color + ";" ;
         
         container.setAttributeNode( clase2 );
+        container.setAttributeNode( onTouch );
+        container.setAttributeNode( idcontainer );
         container.setAttributeNode( containerStyle );
 
         var h4  = document.createElement("h4");
@@ -32,6 +38,8 @@ function engine( idPoke , color , WH ){
         var img = document.createElement("img");
         var imgSrc = document.createAttribute("src");
         var styleImg = document.createAttribute("style");
+        var idimgpoke = document.createAttribute("id");
+        idimgpoke.value = "pokeImg"+idPoke ;
         imgSrc.value = "https://pokeres.bastionbot.org/images/pokemon/" + idPoke + ".png";
         //imgSrc.value = pokemon.sprites.front_default;
         
@@ -39,6 +47,7 @@ function engine( idPoke , color , WH ){
         styleImg.value = "width:" + WH + "rem;height:" + WH + "rem;";
         
         img.setAttributeNode( styleImg );
+        img.setAttributeNode( idimgpoke );
         img.setAttributeNode( imgSrc );
 
         var classpp1 = document.createAttribute("class");
