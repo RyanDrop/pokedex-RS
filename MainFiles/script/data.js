@@ -318,7 +318,7 @@ var i = 0;
 
 function delay( ){
 	
-	if( i > 149 ){ clearInterval( loop ); }
+	if( i > 149 ){ clearInterval( loop ); } //149
 	
 	cont++;
 	i++;

@@ -10,7 +10,7 @@ function engine( idPoke , color , WH ){
     var url = 'https://pokeapi.co/api/v2/pokemon/' + idPoke ; 
     fetch( url ).then( response => response.json()).then( pokemon => { 
 
-        //console.log( pokemon );
+        console.log( pokemon );
 
         var container = document.createElement("div");
         var clase2 = document.createAttribute("class");
