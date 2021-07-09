@@ -274,7 +274,8 @@ footer .pokeinfo .secundaria{
     width:100%;
     height:60vh;
     background: var(--background);
-    border-radius: 30px 30px 0px 0px;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
 }
 
 footer .pokeinfo .principal h4{
@@ -315,4 +316,20 @@ footer .pokeinfo .principal span.number{
     border-radius: 2rem;
 
     text-transform: capitalize;
+}
+
+footer .pokeinfo .nav-list{
+
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content:space-around;
+}
+
+footer .pokeinfo .nav-list a{
+    color:black;
+    text-decoration: none;
+    margin-top: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 5vh;
 }
