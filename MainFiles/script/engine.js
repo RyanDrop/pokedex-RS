@@ -15,7 +15,7 @@ function engine( idPoke , color , WH ){
         var container = document.createElement("div");
         var clase2 = document.createAttribute("class");
         var containerStyle = document.createAttribute("style");
-        var onTouch = document.createAttribute("ontouchstart");
+        var onTouch = document.createAttribute("onclick");
         var idcontainer = document.createAttribute("id");
         clase2.value = "container";
         onTouch.value = "pokeinfoF("+idPoke+")";
