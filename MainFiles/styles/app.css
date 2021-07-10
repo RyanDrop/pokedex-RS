@@ -263,7 +263,7 @@ footer .pokeinfo .principal{
     position:absolute;
     top:0rem;
     left:0rem;
-    width:100%;
+    width:100vw;
     height:100vh;
 }
 
@@ -289,6 +289,13 @@ footer .pokeinfo .principal h4{
     text-transform: capitalize;
 
     display:inline-block;
+}
+
+footer .pokeinfo .principal img{
+    position: absolute;
+    height: 15vh;
+    left:77%;
+    bottom: 87vh;
 }
 
 footer .pokeinfo .principal span.pp{
@@ -327,9 +334,9 @@ footer .pokeinfo .nav-list{
 }
 
 footer .pokeinfo .nav-list a{
-    color:rgb(56, 56, 56);
+    color:#3FD07C;
     text-decoration: none;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     font-family: 'Poppins', sans-serif;
     font-size: 4vh;
     font-weight: 700;
@@ -343,7 +350,7 @@ footer .pokeinfo .secundaria .tg:not(:target){
 footer .pokeinfo .secundaria div.line{
     width: 100vw;
     height: 0.1rem;
-    background-color: rgb(92, 92, 92);
+    background-color: rgb(214, 214, 214);
 }
 
 footer .pokeinfo .secundaria div#sobre.tg{
@@ -367,7 +374,7 @@ footer .pokeinfo .secundaria span{
     color: rgb(65, 65, 65);
     text-transform: capitalize;
     position:absolute;
-    left:33vw;
+    left:38vw;
 }
 
 footer .pokeinfo .secundaria div#status.tg{
