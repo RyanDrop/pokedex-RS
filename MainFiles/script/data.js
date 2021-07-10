@@ -324,8 +324,10 @@ function delay( ){
 	i++;
 	var color = colors[ cont ];
 	var rem = wh[ cont ];
-    engine( i , color , rem );
+    engine( 0 , i , color , rem );
    
 }
 
 var loop = window.setInterval( "delay()" , 160 );
+
+engine(1,1);
