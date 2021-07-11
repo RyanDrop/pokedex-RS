@@ -38,13 +38,19 @@ function activeMenu( mode ){
             var idimg = document.getElementById( armazemIDimg[0] );
             idimg.style = "z-index:1;" ;
             armazemIDimg.shift();
+            idimg = document.getElementById( armazemIDimg[1] );
+            idimg.style = "z-index:1;" ;
+            armazemIDimg.shift();
 
         break;
         case 2: 
             infoDiv.style.top = "0vh"; 
             pokeinfo.style.top = "100%";
 
-            var idimg = document.getElementById(  armazemIDimg[0] );
+            var idimg = document.getElementById( armazemIDimg[0] );
+            idimg.style = "z-index:1;" ;
+            armazemIDimg.shift();
+            idimg = document.getElementById( armazemIDimg[1] );
             idimg.style = "z-index:1;" ;
             armazemIDimg.shift();
          
@@ -68,16 +74,6 @@ function pokeinfoF( id ){
         engine( 1 , id );
     //------------------------------------
 }
-
-//Barra de progresso
-const range = document.querySelector('#range'),
-	progressbar = document.querySelector('.progress-bar1');
-  
-  
-document.addEventListener('input', function(){
-	const value = range.value;
-  progressbar.style.setProperty('Hp', value)
-});
 
 //PARTICLES JS
 

@@ -329,5 +329,3 @@ function delay( ){
 }
 
 var loop = window.setInterval( "delay()" , 160 );
-
-engine(1,1);
