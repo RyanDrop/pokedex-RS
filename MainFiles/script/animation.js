@@ -2,7 +2,7 @@
 
 //VAR's
 var pokeinfo = document.getElementById("pokeinfo");
-var sobre = document.getElementById("sobre");
+var sobre = document.getElementById("sobree");
 var stats = document.getElementById("stats");
 var armazemIDimg = [];
 //------------------------------------------------

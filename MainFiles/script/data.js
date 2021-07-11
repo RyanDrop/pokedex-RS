@@ -315,10 +315,14 @@ var wh = [
 //------------------------------------------------------------------
 var cont = -1 ;
 var i = 0;
+var pokebola = document.getElementById("pokebola");
 
 function delay( ){
 	
-	if( i > 149 ){ clearInterval( loop ); } //149
+	if( i > 149 ){ 
+		clearInterval( loop );
+		pokebola.style.display = "none" ; 
+	}
 	
 	cont++;
 	i++;
@@ -328,4 +332,4 @@ function delay( ){
    
 }
 
-var loop = window.setInterval( "delay()" , 160 );
+var loop = window.setInterval( "delay()" , 200 );
