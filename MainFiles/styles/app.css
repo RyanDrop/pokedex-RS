@@ -354,10 +354,10 @@ footer .pokeinfo .secundaria div.line{
 }
 
 footer .pokeinfo .secundaria div#sobre.tg{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 3vh;
     font-weight: 500;
-    color: rgb(136, 136, 136);
+    color: rgb(116, 116, 116);
     text-transform: capitalize;
     position: relative;
     top:1vh;
@@ -368,17 +368,18 @@ footer .pokeinfo .secundaria div#sobre.tg{
 }
 
 footer .pokeinfo .secundaria span{
-    font-family: 'Poppins', sans-serif;
-    font-size: 3vh;
+    font-family: 'Rubik', sans-serif;
+    font-size: 2vh;
     font-weight: 500;
-    color: rgb(65, 65, 65);
+    color: rgb(105, 105, 105);
     text-transform: capitalize;
     position:absolute;
     left:35vw;
+    margin-top:.3rem;
 }
 
 footer .pokeinfo .secundaria div#status.tg{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 3vh;
     font-weight: 500;
     color: rgb(136, 136, 136);
@@ -391,12 +392,13 @@ footer .pokeinfo .secundaria div#status.tg{
 /*Barra de progresso*/
   
   .progress-bar1{
-    --Hp: 80;
+    --Hp: 80/1.5;
+    border-radius: 5rem;
     width: 55vw;
-    height: 3vhvh;
-    background-color: rgba(209, 209, 209, 0.281);
+    height: 2vh;
+    background-color: rgba(160, 159, 159, 0.301);
     display: flex;
-    top:0.01vh;
+    top:0.4vh;
     
 
   }
@@ -410,12 +412,13 @@ footer .pokeinfo .secundaria div#status.tg{
   }
 
   .progress-bar2{
-    --Atk: 90;
+    --Atk: 90/1.5;
+    border-radius: 5rem;
     width: 55vw;
-    height: 3vh;
-    background-color: rgba(209, 209, 209, 0.281);
+    height: 2vh;
+    background-color: rgba(160, 159, 159, 0.301);
     display: flex;
-    top:4vh;
+    top:3.9vh;
 
   }
   
@@ -427,12 +430,13 @@ footer .pokeinfo .secundaria div#status.tg{
   }
 
   .progress-bar3{
-    --OverAtk: 10;
+    --OverAtk: 10/1.5;
+    border-radius: 5rem;
     width: 55vw;
-    height: 3vhvh;
-    background-color: rgba(209, 209, 209, 0.281);
+    height: 2vh;
+    background-color: rgba(160, 159, 159, 0.301);
     display: flex;
-    top:8vh;
+    top:7.5vh;
 
   }
   
@@ -445,12 +449,13 @@ footer .pokeinfo .secundaria div#status.tg{
   }
 
   .progress-bar4{
-    --Def: 40;
+    --Def: 40/1.5;
+    border-radius: 5rem;
     width: 55vw;
-    height: 3vhvh;
-    background-color: rgba(209, 209, 209, 0.281);
+    height: 2vh;
+    background-color: rgba(160, 159, 159, 0.301);
     display: flex;
-    top:12vh;
+    top:11vh;
 
   }
   
@@ -463,12 +468,13 @@ footer .pokeinfo .secundaria div#status.tg{
   }
 
   .progress-bar5{
-    --Overdef: 60;
+    --Overdef: 60/1.5;
+    border-radius: 5rem;
     width: 55vw;
-    height: 3vhvh;
-    background-color: rgba(209, 209, 209, 0.281);
+    height: 2vh;
+    background-color: rgba(160, 159, 159, 0.301);
     display: flex;
-    top:16vh;
+    top:14.5vh;
 
   }
   
@@ -481,12 +487,13 @@ footer .pokeinfo .secundaria div#status.tg{
   }
 
   .progress-bar6{
-    --Speed: 77;
+    --Speed: 77/1.5;
+    border-radius: 5rem;
     width: 55vw;
-    height: 3vhvh;
-    background-color: rgba(209, 209, 209, 0.281);
+    height: 2vh;
+    background-color: rgba(160, 159, 159, 0.301);
     display: flex;
-    top:20vh;
+    top:18vh;
 
   }
   
