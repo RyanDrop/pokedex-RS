@@ -5,6 +5,21 @@ var namePoke;
 var nav = document.getElementById("nav");
 var containers = document.getElementById("containers");
 
+var root = document.documentElement;
+
+var namePokeInfo = document.getElementById("namePokeInfo");
+var typePokeinfo1 = document.getElementById("typePokeinfo1");
+var typePokeinfo2 = document.getElementById("typePokeinfo2");
+var numberPoke = document.getElementById("numberPoke");
+var alturaPoke = document.getElementById("alturaPoke");
+var pesoPoke = document.getElementById("pesoPoke");
+var barHP = document.getElementById("barHP");
+var barAtk = document.getElementById("barAtk");
+var barEspAtk = document.getElementById("barEspAtk");
+var barDef = document.getElementById("barDef");
+var barEspDef = document.getElementById("barEspDef");
+var barSpeed = document.getElementById("barSpeed");
+
 function engine( mode , idPoke , color , WH ){
 
     switch( mode ){
@@ -104,48 +119,76 @@ function engine( mode , idPoke , color , WH ){
                 //nome do pokemon
                 var namePoke = pokemon.name;
                 console.log("nome: " + namePoke );
+                namePokeInfo.innerHTML = namePoke;
 
                 //TIPO 1
                 var typePoke1 = pokemon.types[0].type.name;
                 console.log( "Tipo 1: " + typePoke1 );
+                typePokeinfo1.innerHTML = typePoke1;
 
                 //TIPO 2
                 if( pokemon.types[1] != undefined||null ){
                     var typePoke2 = pokemon.types[1].type.name;
                     console.log( "Tipo 2: " + typePoke2 );
+                    typePokeinfo2.innerHTML = typePoke2;
+                }else{
+                    typePokeinfo2.style.display = "none";
+                }
+
+                //Number Poke
+                if( idPoke < 10 ){
+                    numberPoke.innerHTML = "#00" + idPoke ;
+                }if( ( idPoke >= 10 )&&( idPoke < 100 ) ){
+                    numberPoke.innerHTML = "#0" + idPoke ;
+                }if( idPoke >= 100 ){
+                    numberPoke.innerHTML = "#" + idPoke ;
                 }
 
                 //altura do pokemon
                 var heightPoke = pokemon.height;
-                console.log("altura: " + heightPoke + "0cm" );
+                console.log("altura: 0," + heightPoke + "m" );
+                alturaPoke.innerHTML = "0," + heightPoke + "m";
 
                 //Peso
                 var weightPoke = pokemon.weight;
                 console.log( "Peso: " + weightPoke + "Kg" );
+                pesoPoke.innerHTML = weightPoke + "Kg"
 
                 //HP
                 var hpPoke = pokemon.stats[0].base_stat;
                 console.log( "HP: " + hpPoke );
+                barHP.style.setProperty("--Hp", hpPoke/1.5 );
+                barHP.innerHTML = hpPoke;
 
                 //Ataque
                 var atackPoke = pokemon.stats[1].base_stat;
                 console.log( "AT: " + atackPoke );
+                barAtk.style.setProperty("--Atk", atackPoke/1.5 );
+                barAtk.innerHTML = atackPoke;
 
                 //Defesa
                 var defesaPoke = pokemon.stats[2].base_stat;
                 console.log( "DF: " + defesaPoke );
+                barDef.style.setProperty("--Def", defesaPoke/1.5 );
+                barDef.innerHTML = defesaPoke;
 
                 //Especial-atack
                 var espAtackPoke = pokemon.stats[3].base_stat;
                 console.log( "Especial - AT: " + espAtackPoke );
+                barEspAtk.style.setProperty("--OverAtk", espAtackPoke/1.5 );
+                barEspAtk.innerHTML = espAtackPoke;
 
                 //Especial-defesa
                 var espDefesaPoke = pokemon.stats[4].base_stat;
-                console.log( "Especial - DF: " + espAtackPoke );
+                console.log( "Especial - DF: " + espDefesaPoke );
+                barEspDef.style.setProperty("--Overdef" , espDefesaPoke/1.5 );
+                barEspDef.innerHTML = espDefesaPoke;
 
                 //velocidade
                 var veloPoke = pokemon.stats[5].base_stat;
                 console.log( "Velocidade: " + veloPoke );
+                barSpeed.style.setProperty("--Speed" , veloPoke/1.5 );
+                barSpeed.innerHTML = veloPoke ;
 
                 //habilidades
                 var habilidade1 = pokemon.abilities[0].ability.name;

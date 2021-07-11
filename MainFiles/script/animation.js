@@ -63,6 +63,10 @@ function pokeinfoF( id ){
     var idimg = document.getElementById( "pokeImg"+id );
     idimg.style = "z-index:4;width:auto;height:33vh;position:fixed;top:40%;left:47%;transform: translate(-40%,-47%);" ;
     armazemIDimg.push( "pokeImg" + id );
+
+    //CHAMADA DE MOTOR PARA BUSCA DE DADOS
+        engine( 1 , id );
+    //------------------------------------
 }
 
 //Barra de progresso
