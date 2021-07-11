@@ -38,9 +38,11 @@ function activeMenu( mode ){
             var idimg = document.getElementById( armazemIDimg[0] );
             idimg.style = "z-index:1" ;
             armazemIDimg.shift();
-            idimg = document.getElementById( armazemIDimg[1] );
-            idimg.style = "z-index:1" ;
-            armazemIDimg.shift();
+            if( armazemIDimg[1] !== undefined||null ){
+              idimg = document.getElementById( armazemIDimg[1] );
+              idimg.style = "z-index:1" ;
+              armazemIDimg.shift();
+            }
 
         break;
         case 2: 
@@ -50,9 +52,11 @@ function activeMenu( mode ){
             var idimg = document.getElementById( armazemIDimg[0] );
             idimg.style = "z-index:1" ;
             armazemIDimg.shift();
-            idimg = document.getElementById( armazemIDimg[1] );
-            idimg.style = "z-index:1" ;
-            armazemIDimg.shift();
+            if( armazemIDimg[1] !== undefined||null ){
+              idimg = document.getElementById( armazemIDimg[1] );
+              idimg.style = "z-index:1" ;
+              armazemIDimg.shift();
+            }
          
         break;
     }

@@ -196,10 +196,15 @@ function engine( mode , idPoke , color , WH ){
                 //habilidades
                 var habilidade1 = pokemon.abilities[0].ability.name;
                 hab1.innerHTML = habilidade1;
-                var habilidade2 = pokemon.abilities[1].ability.name;
-                hab2.innerHTML = habilidade2 ;
-                console.log( "habilidade 1: " + habilidade1 );
-                console.log( "habilidade 2: " + habilidade2 );
+                
+                if( pokemon.abilities[1] != undefined||null ){
+                    var habilidade2 = pokemon.abilities[1].ability.name;
+                    hab2.innerHTML = habilidade2 ;
+                    console.log( "habilidade 1: " + habilidade1 );
+                    console.log( "habilidade 2: " + habilidade2 );
+                }else{
+                    hab2.innerHTML = "none" ;
+                }
 
                 var JsonHabilidade1 = pokemon.abilities[0].ability.url;
                 fetch( JsonHabilidade1 ).then( response => response.json() ).then( habilidade => {
@@ -209,13 +214,17 @@ function engine( mode , idPoke , color , WH ){
 
                 });
 
-                var JsonHabilidade2 = pokemon.abilities[1].ability.url;
-                fetch( JsonHabilidade2 ).then( response => response.json() ).then( habilidade => {
+                if(  pokemon.abilities[1] != undefined||null ){
 
-                    var sobre = habilidade.effect_entries[1].short_effect;
-                    console.log( "Efeito da habilidade 2: " + sobre );
+                    var JsonHabilidade2 = pokemon.abilities[1].ability.url;
+                    fetch( JsonHabilidade2 ).then( response => response.json() ).then( habilidade => {
 
-                });
+                        var sobre = habilidade.effect_entries[1].short_effect;
+                        console.log( "Efeito da habilidade 2: " + sobre );
+
+                    });
+
+                }
 
                 //SOBRE O POKEMON
                 var sobreType = pokemon.types[0].type.url;
@@ -255,8 +264,12 @@ function engine( mode , idPoke , color , WH ){
                     }
 
                     //Fraco contra
-                    var noDamage = type.damage_relations.no_damage_to[0].name;
-                    console.log( "Fraco contra: " + noDamage );
+                    if( type.damage_relations.no_damage_to[0] != undefined||null ){
+
+                        var noDamage = type.damage_relations.no_damage_to[0].name;
+                        console.log( "Fraco contra: " + noDamage );
+
+                    }
 
                 });
             
