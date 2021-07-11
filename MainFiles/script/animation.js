@@ -60,3 +60,13 @@ function pokeinfoF( id ){
     idimg.style = "z-index:4;width:auto;height:33vh;position:fixed;top:40%;left:47%;transform: translate(-40%,-47%);" ;
     armazemIDimg.push( "pokeImg" + id );
 }
+
+//Barra de progresso
+const range = document.querySelector('#range'),
+	progressbar = document.querySelector('.progress-bar1');
+  
+  
+range.addEventListener('input', function(){
+	const value = range.value;
+  progressbar.style.setProperty('Hp', value)
+})

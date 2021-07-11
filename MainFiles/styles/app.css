@@ -374,7 +374,7 @@ footer .pokeinfo .secundaria span{
     color: rgb(65, 65, 65);
     text-transform: capitalize;
     position:absolute;
-    left:38vw;
+    left:35vw;
 }
 
 footer .pokeinfo .secundaria div#status.tg{
@@ -388,3 +388,111 @@ footer .pokeinfo .secundaria div#status.tg{
     left:5vw;
     width: 28vw;
 }
+/*Barra de progresso*/
+  
+  .progress-bar1{
+    --Hp: 80;
+    width: 55vw;
+    height: 3vhvh;
+    background-color: rgba(209, 209, 209, 0.281);
+    display: flex;
+    top:0.01vh;
+    
+
+  }
+  
+  .progress-bar1::before{
+    content: "";
+    width: calc(var(--Hp) * 1%);
+    background-color: hsl( calc(var(--Hp) * 1.2) , 80%, 50%);
+    transition: all 0.2s ease;
+    
+  }
+
+  .progress-bar2{
+    --Atk: 90;
+    width: 55vw;
+    height: 3vh;
+    background-color: rgba(209, 209, 209, 0.281);
+    display: flex;
+    top:4vh;
+
+  }
+  
+  .progress-bar2::before{
+    content: "";
+    width: calc(var(--Atk) * 1%);
+    background-color: hsl( calc(var(--Atk) * 1.2) , 80%, 50%);
+    transition: all 0.2s ease;
+  }
+
+  .progress-bar3{
+    --OverAtk: 10;
+    width: 55vw;
+    height: 3vhvh;
+    background-color: rgba(209, 209, 209, 0.281);
+    display: flex;
+    top:8vh;
+
+  }
+  
+  .progress-bar3::before{
+    content: "";
+    width: calc(var(--OverAtk) * 1%);
+    background-color: hsl( calc(var(--OverAtk) * 1.2) , 80%, 50%);
+    transition: all 0.2s ease;
+    
+  }
+
+  .progress-bar4{
+    --Def: 40;
+    width: 55vw;
+    height: 3vhvh;
+    background-color: rgba(209, 209, 209, 0.281);
+    display: flex;
+    top:12vh;
+
+  }
+  
+  .progress-bar4::before{
+    content: "";
+    width: calc(var(--Def) * 1%);
+    background-color: hsl( calc(var(--Def) * 1.2) , 80%, 50%);
+    transition: all 0.2s ease;
+    
+  }
+
+  .progress-bar5{
+    --Overdef: 60;
+    width: 55vw;
+    height: 3vhvh;
+    background-color: rgba(209, 209, 209, 0.281);
+    display: flex;
+    top:16vh;
+
+  }
+  
+  .progress-bar5::before{
+    content: "";
+    width: calc(var(--Overdef) * 1%);
+    background-color: hsl( calc(var(--Overdef) * 1.2) , 80%, 50%);
+    transition: all 0.2s ease;
+    
+  }
+
+  .progress-bar6{
+    --Speed: 77;
+    width: 55vw;
+    height: 3vhvh;
+    background-color: rgba(209, 209, 209, 0.281);
+    display: flex;
+    top:20vh;
+
+  }
+  
+  .progress-bar6::before{
+    content: "";
+    width: calc(var(--Speed) * 1%);
+    background-color: hsl( calc(var(--Speed) * 1.2) , 80%, 50%);
+    transition: all 0.2s ease;
+  }
