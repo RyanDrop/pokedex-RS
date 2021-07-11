@@ -36,10 +36,10 @@ function activeMenu( mode ){
             pokeinfo.style.top = "100%";
 
             var idimg = document.getElementById( armazemIDimg[0] );
-            idimg.style = "z-index:1;" ;
+            idimg.style = "z-index:1" ;
             armazemIDimg.shift();
             idimg = document.getElementById( armazemIDimg[1] );
-            idimg.style = "z-index:1;" ;
+            idimg.style = "z-index:1" ;
             armazemIDimg.shift();
 
         break;
@@ -48,10 +48,10 @@ function activeMenu( mode ){
             pokeinfo.style.top = "100%";
 
             var idimg = document.getElementById( armazemIDimg[0] );
-            idimg.style = "z-index:1;" ;
+            idimg.style = "z-index:1" ;
             armazemIDimg.shift();
             idimg = document.getElementById( armazemIDimg[1] );
-            idimg.style = "z-index:1;" ;
+            idimg.style = "z-index:1" ;
             armazemIDimg.shift();
          
         break;

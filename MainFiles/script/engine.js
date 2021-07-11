@@ -5,8 +5,6 @@ var namePoke;
 var nav = document.getElementById("nav");
 var containers = document.getElementById("containers");
 
-var root = document.documentElement;
-
 var namePokeInfo = document.getElementById("namePokeInfo");
 var typePokeinfo1 = document.getElementById("typePokeinfo1");
 var typePokeinfo2 = document.getElementById("typePokeinfo2");
@@ -19,6 +17,9 @@ var barEspAtk = document.getElementById("barEspAtk");
 var barDef = document.getElementById("barDef");
 var barEspDef = document.getElementById("barEspDef");
 var barSpeed = document.getElementById("barSpeed");
+var tipoPoke = document.getElementById("tipoPoke");
+var hab1 = document.getElementById("hab1");
+var hab2 = document.getElementById("hab2");
 
 function engine( mode , idPoke , color , WH ){
 
@@ -125,14 +126,16 @@ function engine( mode , idPoke , color , WH ){
                 var typePoke1 = pokemon.types[0].type.name;
                 console.log( "Tipo 1: " + typePoke1 );
                 typePokeinfo1.innerHTML = typePoke1;
+                tipoPoke.innerHTML = typePoke1;
 
                 //TIPO 2
                 if( pokemon.types[1] != undefined||null ){
+                    typePokeinfo2.style.display = "inline" ;
                     var typePoke2 = pokemon.types[1].type.name;
                     console.log( "Tipo 2: " + typePoke2 );
                     typePokeinfo2.innerHTML = typePoke2;
                 }else{
-                    typePokeinfo2.style.display = "none";
+                    typePokeinfo2.style.display = "none" ;
                 }
 
                 //Number Poke
@@ -192,7 +195,9 @@ function engine( mode , idPoke , color , WH ){
 
                 //habilidades
                 var habilidade1 = pokemon.abilities[0].ability.name;
+                hab1.innerHTML = habilidade1;
                 var habilidade2 = pokemon.abilities[1].ability.name;
+                hab2.innerHTML = habilidade2 ;
                 console.log( "habilidade 1: " + habilidade1 );
                 console.log( "habilidade 2: " + habilidade2 );
 
@@ -262,35 +267,3 @@ function engine( mode , idPoke , color , WH ){
     }
 
 }
-
-
-//abilidade 1 do pokemon
-       // var ability1 = pokemon.abilities[0].ability.name;
-        //console.log( "Abilidade 1: " + ability1 );
-
-            //abilidade 2 do pokemon
-         //var ability2 = pokemon.abilities[1].ability.name;
-         //console.log( "Abilidade 1: " + ability2 );
-
-         /*caminhos JSON 
-
-            nome do pokemon
-                pokemon.name
-
-            tipo do pekemon
-                pokemon.type[0].type.name
-                        pode ter mais que um tipo
-
-            imagem do popkemon frente
-                pokemon.sprites.front_default
-                    retorna URL para tag img HTML
-
-            imagem do pokemon trás
-                pokemon.sprites.back_default
-                    retorna URL para tag img HTML
-         
-			imagem alta resolução
-				url + id do pokemon + .png
-					https://pokeres.bastionbot.org/images/pokemon/
-			
-		*/
