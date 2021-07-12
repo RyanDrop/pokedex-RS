@@ -376,6 +376,7 @@ footer .pokeinfo .secundaria span{
     position:absolute;
     left:35vw;
     margin-top:.3rem;
+    white-space: nowrap;
 }
 
 footer .pokeinfo .secundaria div#status.tg{

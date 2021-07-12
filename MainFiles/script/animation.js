@@ -38,11 +38,6 @@ function activeMenu( mode ){
             var idimg = document.getElementById( armazemIDimg[0] );
             idimg.style = "z-index:1" ;
             armazemIDimg.shift();
-            if( armazemIDimg[1] !== undefined||null ){
-              idimg = document.getElementById( armazemIDimg[1] );
-              idimg.style = "z-index:1" ;
-              armazemIDimg.shift();
-            }
 
         break;
         case 2: 
@@ -52,11 +47,6 @@ function activeMenu( mode ){
             var idimg = document.getElementById( armazemIDimg[0] );
             idimg.style = "z-index:1" ;
             armazemIDimg.shift();
-            if( armazemIDimg[1] !== undefined||null ){
-              idimg = document.getElementById( armazemIDimg[1] );
-              idimg.style = "z-index:1" ;
-              armazemIDimg.shift();
-            }
          
         break;
     }
@@ -66,6 +56,7 @@ function activeMenu( mode ){
 //DIV INFO POKEINFO IMG
 
 function pokeinfoF( id ){ 
+    armazemIDimg.shift();
     pokeinfo.style.top = "0rem" ;
     pokeinfo.style.backgroundColor = colors[ id-1 ]; 
     sobre.style.color = colors[ id-1 ] ;
