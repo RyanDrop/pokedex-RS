@@ -40,7 +40,6 @@ h2{
     margin-top: 2rem;
     margin-bottom: .5rem;
     margin-left: 1rem;
-    width: 100vw;
     background: linear-gradient(45deg, #e05252, #99e052, #52e0e0, #9952e0, #e05252);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
