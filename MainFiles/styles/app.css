@@ -367,8 +367,12 @@ footer .pokeinfo .secundaria div#sobre.tg{
     top:1vh;
     left:5vw;
     width: 28vw;
+}
 
-    
+footer .pokeinfo .secundaria span#descricao{
+    display: inline-block;
+    white-space:normal;
+    width: 55vw;
 }
 
 footer .pokeinfo .secundaria span{
