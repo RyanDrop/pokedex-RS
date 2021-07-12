@@ -1,5 +1,5 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/Ryan-drop/Pokedex.rs?color=red)
-<img src="https://img.shields.io/badge/version-ALFA-red"/>
+<img src="https://img.shields.io/badge/version-1.2-red"/>
 <img src="https://img.shields.io/badge/API-PokeAPI-orange"/>
 
 ****************
