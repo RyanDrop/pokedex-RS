@@ -37,9 +37,11 @@ h2{
     font-weight: 700;
     display: flex;
     margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: .5rem;
     margin-left: 1rem;
-    color:var(--color-text);
+    background: linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .container h4{
     font-family: 'Poppins', sans-serif;
