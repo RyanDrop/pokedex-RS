@@ -197,8 +197,23 @@ function engine( mode , idPoke , color , WH ){
                 var weightPoke = pokemon.weight;
                 console.log( "Peso: " + weightPoke + "Kg" );
                 var string = weightPoke + "" ;
-                var stringPronta = string[0] + string[1] + "," + string[2] + "Kg";
-                pesoPoke.innerHTML = stringPronta ;
+                if( string[2] != undefined||null ){
+                    var stringPronta = string[0] + string[1] + "," + string[2] + "Kg";
+                    pesoPoke.innerHTML = stringPronta ;
+                }
+                if( string[2] == undefined||null ){
+                    var stringPronta = string[0] + "," + string[1] + "Kg";
+                    pesoPoke.innerHTML = stringPronta ;
+                }
+                if( ( string[1] == undefined||null )&&( string[2] == undefined||null ) ){
+                    var stringPronta = "0," + string[0] + "Kg";
+                    pesoPoke.innerHTML = stringPronta ;
+                }
+                if( string[3] != undefined||null ){
+                    var stringPronta = string[0] + string[1] + string[2] + "," + string[3] + "Kg";
+                    pesoPoke.innerHTML = stringPronta ;
+                }
+
 
                 //HP
                 var hpPoke = pokemon.stats[0].base_stat;
