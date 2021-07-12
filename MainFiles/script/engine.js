@@ -127,7 +127,7 @@ function engine( mode , idPoke , color , WH ){
                 fetch( descricao ).then( response => response.json()).then( descrption => {
                     console.log( descrption );
 
-                    var descp1 = descrption.flavor_text_entries[0].flavor_text;
+                    var descp1 = descrption.flavor_text_entries[10].flavor_text;
                     console.log( "sobre: " + descp1 );
                     descricaoo.innerHTML = descp1 ;
                     /*var descp2 = descrption.flavor_text_entries[2].flavor_text;
