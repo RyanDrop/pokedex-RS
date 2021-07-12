@@ -40,10 +40,26 @@ h2{
     margin-top: 2rem;
     margin-bottom: .5rem;
     margin-left: 1rem;
-    background: linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%);
+    width: 100vw;
+    background: linear-gradient(45deg, #e05252, #99e052, #52e0e0, #9952e0, #e05252);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: colors 5s ease infinite;
+
 }
+
+@keyframes colors {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
 .container h4{
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
@@ -367,12 +383,17 @@ footer .pokeinfo .secundaria div#sobre.tg{
     top:1vh;
     left:5vw;
     width: 28vw;
+    height: 18vh;
 }
 
 footer .pokeinfo .secundaria span#descricao{
-    display: inline-block;
     white-space:normal;
-    width: 55vw;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left:0vw
 }
 
 footer .pokeinfo .secundaria span{
@@ -387,6 +408,12 @@ footer .pokeinfo .secundaria span{
     white-space: nowrap;
 }
 
+footer .pokeinfo .secundaria p{
+    width: 91vw;
+    text-align: center;
+    left:0;
+}
+
 footer .pokeinfo .secundaria div#status.tg{
     font-family: 'Rubik', sans-serif;
     font-size: 3vh;
@@ -398,6 +425,15 @@ footer .pokeinfo .secundaria div#status.tg{
     left:5vw;
     width: 28vw;
 }
+
+footer .pokeinfo .secundaria div.line2{
+    width: 15.5vw;
+    position:absolute;
+    left:37.7vw;
+    height: 0.1rem;
+    background-color: rgba(231, 231, 231, 0.527);
+}
+
 
  /*CANVAS*/
 
