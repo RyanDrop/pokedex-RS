@@ -1,6 +1,7 @@
 // file to animation app/web
 
 //VAR's
+var body = document.getElementsByTagName("body")[0];
 var pokeinfo = document.getElementById("pokeinfo");
 var sobre = document.getElementById("sobree");
 var stats = document.getElementById("stats");
@@ -182,3 +183,16 @@ particlesJS("particles-js",{
       },
       "retina_detect": true
 });
+
+// DARK MODE
+var mode = 0;
+function dark(){
+  mode++;
+  if( mode == 1 ){
+    body.style.backgroundColor = "rgb(36,36,36)";
+  }else{ 
+    mode = 0;
+    body.style.backgroundColor = "#fff"; 
+  }
+
+}
