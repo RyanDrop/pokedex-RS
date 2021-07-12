@@ -212,6 +212,8 @@ footer .info{
     transition:0.5s;
     background:var(--background);
     z-index:2;  
+    padding-top:20px;
+    box-sizing: border-box;
 }
 
 .info h3{
@@ -378,7 +380,9 @@ footer .pokeinfo .secundaria span#descricao{
     align-items: center;
     justify-content: center;
     position: absolute;
-    left:0vw
+    left:0vw;
+    margin-left:-13px ;
+    font-size: 10px;
 }
 
 footer .pokeinfo .secundaria span{
