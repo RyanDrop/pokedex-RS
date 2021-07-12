@@ -13,6 +13,7 @@
     --color-text-cont:rgb(255, 255, 255);
     --containers: rgb(255, 231, 15);
     --menu: rgb(241, 241, 241);
+    --color-sobre:rgb(92, 92, 92);
 }
 
 body{
@@ -176,6 +177,7 @@ h2{
     --color-text-cont:rgb(236, 236, 236);
     --containers: rgba(255, 230, 0, 0.699);
     --menu:rgb(56, 56, 56);
+    --color-sobre:rgb(212, 212, 212);
 
     background: var(--background);
     color:var(--color-text);
@@ -359,7 +361,7 @@ footer .pokeinfo .secundaria div#sobre.tg{
     font-family: 'Rubik', sans-serif;
     font-size: 3vh;
     font-weight: 500;
-    color: rgb(116, 116, 116);
+    color: var(--color-sobre);
     text-transform: capitalize;
     position: relative;
     top:1vh;
@@ -373,7 +375,7 @@ footer .pokeinfo .secundaria span{
     font-family: 'Rubik', sans-serif;
     font-size: 2vh;
     font-weight: 500;
-    color: rgb(105, 105, 105);
+    color: var(--color-sobre);
     text-transform: capitalize;
     position:absolute;
     left:35vw;
@@ -385,7 +387,7 @@ footer .pokeinfo .secundaria div#status.tg{
     font-family: 'Rubik', sans-serif;
     font-size: 3vh;
     font-weight: 500;
-    color: rgb(136, 136, 136);
+    color: var(--color-sobre);
     text-transform: capitalize;
     position: relative;
     top:1vh;
