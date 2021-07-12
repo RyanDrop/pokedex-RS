@@ -20,6 +20,7 @@ var barSpeed = document.getElementById("barSpeed");
 var tipoPoke = document.getElementById("tipoPoke");
 var hab1 = document.getElementById("hab1");
 var hab2 = document.getElementById("hab2");
+var descricaoo = document.getElementById("descricao");
 
 function engine( mode , idPoke , color , WH ){
 
@@ -128,7 +129,8 @@ function engine( mode , idPoke , color , WH ){
 
                     var descp1 = descrption.flavor_text_entries[0].flavor_text;
                     console.log( "sobre: " + descp1 );
-                    var descp2 = descrption.flavor_text_entries[2].flavor_text;
+                    descricaoo.innerHTML = descp1 ;
+                    /*var descp2 = descrption.flavor_text_entries[2].flavor_text;
                     console.log( "sobre: " + descp2 );
                     var descp3 = descrption.flavor_text_entries[3].flavor_text;
                     console.log( "sobre: " + descp3 );
@@ -143,7 +145,7 @@ function engine( mode , idPoke , color , WH ){
                     var descp8 = descrption.flavor_text_entries[9].flavor_text;
                     console.log( "sobre: " + descp8 );
                     var descp9 = descrption.flavor_text_entries[10].flavor_text;
-                    console.log( "sobre: " + descp9 );
+                    console.log( "sobre: " + descp9 );*/
 
                     //GRUPO - faz parte do grupo de
                     var grup1 = descrption.egg_groups[0].name;
