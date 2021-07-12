@@ -184,12 +184,21 @@ function engine( mode , idPoke , color , WH ){
                 //altura do pokemon
                 var heightPoke = pokemon.height;
                 console.log("altura: 0," + heightPoke + "m" );
-                alturaPoke.innerHTML = "0," + heightPoke + "m";
+                var stringHeight = heightPoke + "" ;
+                if( stringHeight[1] == undefined||null ){
+                    var stringHeightPronta = "0," + stringHeight[0] + "m" ;
+                    alturaPoke.innerHTML = stringHeightPronta;
+                }else{
+                    var stringHeightPronta = stringHeight[0] + "," + stringHeight[1] + "m";
+                    alturaPoke.innerHTML = stringHeightPronta;
+                }
 
                 //Peso
                 var weightPoke = pokemon.weight;
                 console.log( "Peso: " + weightPoke + "Kg" );
-                pesoPoke.innerHTML = weightPoke;
+                var string = weightPoke + "" ;
+                var stringPronta = string[0] + string[1] + "," + string[2] + "Kg";
+                pesoPoke.innerHTML = stringPronta ;
 
                 //HP
                 var hpPoke = pokemon.stats[0].base_stat;
