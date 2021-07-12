@@ -34,29 +34,15 @@ main{
 
 h2{
     font-family: 'Poppins', sans-serif;
-    font-size: 2rem;
+    font-size: 6vh;
     font-weight: 700;
     display: flex;
     margin-top: 2rem;
     margin-bottom: .5rem;
     margin-left: 1rem;
-    background: linear-gradient(45deg, #e05252, #99e052, #52e0e0, #9952e0, #e05252);
+    background: linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: colors 5s ease infinite;
-
-}
-
-@keyframes colors {
-    0%{
-        background-position: 0% 50%;
-    }
-    50%{
-        background-position: 100% 50%;
-    }
-    100%{
-        background-position: 0% 50%;
-    }
 }
 
 .container h4{
