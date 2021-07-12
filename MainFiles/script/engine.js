@@ -122,6 +122,40 @@ function engine( mode , idPoke , color , WH ){
                 console.log("nome: " + namePoke );
                 namePokeInfo.innerHTML = namePoke;
 
+                var descricao = pokemon.species.url;
+                fetch( descricao ).then( response => response.json()).then( descrption => {
+                    console.log( descrption );
+
+                    var descp1 = descrption.flavor_text_entries[0].flavor_text;
+                    console.log( "sobre: " + descp1 );
+                    var descp2 = descrption.flavor_text_entries[2].flavor_text;
+                    console.log( "sobre: " + descp2 );
+                    var descp3 = descrption.flavor_text_entries[3].flavor_text;
+                    console.log( "sobre: " + descp3 );
+                    var descp4 = descrption.flavor_text_entries[4].flavor_text;
+                    console.log( "sobre: " + descp4 );
+                    var descp5 = descrption.flavor_text_entries[5].flavor_text;
+                    console.log( "sobre: " + descp5 );
+                    var descp6 = descrption.flavor_text_entries[6].flavor_text;
+                    console.log( "sobre: " + descp6 );
+                    var descp7 = descrption.flavor_text_entries[8].flavor_text;
+                    console.log( "sobre: " + descp7 );
+                    var descp8 = descrption.flavor_text_entries[9].flavor_text;
+                    console.log( "sobre: " + descp8 );
+                    var descp9 = descrption.flavor_text_entries[10].flavor_text;
+                    console.log( "sobre: " + descp9 );
+
+                    //GRUPO - faz parte do grupo de
+                    var grup1 = descrption.egg_groups[0].name;
+                    console.log( "faz parte do grupo de: " + grup1 );
+
+                    if( descrption.egg_groups[1] != undefined||null ){
+                        var grup2 = descrption.egg_groups[1].name;
+                        console.log( "faz parte do grupo de: " + grup2 );
+                    }
+
+                } );
+
                 //TIPO 1
                 var typePoke1 = pokemon.types[0].type.name;
                 console.log( "Tipo 1: " + typePoke1 );
@@ -236,26 +270,45 @@ function engine( mode , idPoke , color , WH ){
                     console.log( "Duplo dano recebido de: " + doubleDamage );
 
                     //duplo dano a pokemon tipo
-                    var doublePokeDamage1 = type.damage_relations.double_damage_to[0].name;
-                    var doublePokeDamage2 = type.damage_relations.double_damage_to[1].name;
-                    console.log( "Duplo dano a pokemon tipo: " + doublePokeDamage1 );
-                    console.log( "Duplo dano a pokemon tipo: " + doublePokeDamage2 );
+                    if( type.damage_relations.double_damage_to[0] != undefined||null ){
+                        var doublePokeDamage1 = type.damage_relations.double_damage_to[0].name;
+                        console.log( "Duplo dano a pokemon tipo: " + doublePokeDamage1 );
+                    }
+
+                    if( type.damage_relations.double_damage_to[1] != undefined||null ){
+                        var doublePokeDamage2 = type.damage_relations.double_damage_to[1].name;
+                        console.log( "Duplo dano a pokemon tipo: " + doublePokeDamage2 );
+                    }
 
                     //metade de dano recebido para pokemon tipo
-                    var halfDamage1 = type.damage_relations.half_damage_from[0].name;
-                    var halfDamage2 = type.damage_relations.half_damage_from[1].name;
-                    var halfDamage3 = type.damage_relations.half_damage_from[2].name;
-                    console.log( "Metade de dano recebido para pokemon tipo: " + halfDamage1 );
-                    console.log( "Metade de dano recebido para pokemon tipo: " + halfDamage2 );
-                    console.log( "Metade de dano recebido para pokemon tipo: " + halfDamage3 );
+                    if(  type.damage_relations.half_damage_from[0] != undefined||null ){
+                        var halfDamage1 = type.damage_relations.half_damage_from[0].name;
+                        console.log( "Metade de dano recebido para pokemon tipo: " + halfDamage1 );
+                    }
+
+                    if( type.damage_relations.half_damage_from[1] != undefined||null ){
+                        var halfDamage2 = type.damage_relations.half_damage_from[1].name;
+                        console.log( "Metade de dano recebido para pokemon tipo: " + halfDamage2 );
+                    }
+                    
+                    if( type.damage_relations.half_damage_from[2] != undefined||null ){
+                        var halfDamage3 = type.damage_relations.half_damage_from[2].name;
+                        console.log( "Metade de dano recebido para pokemon tipo: " + halfDamage3 );
+                    }
 
                     //metade de dano de atack para pokemon tipo
                     var halfToDamage1 = type.damage_relations.half_damage_to[0].name;
-                    var halfToDamage2 = type.damage_relations.half_damage_to[1].name;
-                    var halfToDamage3 = type.damage_relations.half_damage_to[2].name;
                     console.log( "Metade de atack dado para: " + halfToDamage1 );
-                    console.log( "Metade de atack dado para: " + halfToDamage2 );
-                    console.log( "Metade de atack dado para: " + halfToDamage3 );
+
+                    if( type.damage_relations.half_damage_to[1] != undefined||null ){
+                        var halfToDamage2 = type.damage_relations.half_damage_to[1].name;
+                        console.log( "Metade de atack dado para: " + halfToDamage2 );
+                    }
+
+                    if( type.damage_relations.half_damage_to[2] != undefined||null ){
+                        var halfToDamage3 = type.damage_relations.half_damage_to[2].name;
+                        console.log( "Metade de atack dado para: " + halfToDamage3 );
+                    }
 
                     //Imune a
                     if( type.damage_relations.no_damage_from[0] != null||undefined ){
