@@ -1,5 +1,5 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/Ryan-drop/Pokedex.rs?color=red)
-<img src="https://img.shields.io/badge/version-1.2-red"/>
+<img src="https://img.shields.io/badge/version-1.3-red"/>
 <img src="https://img.shields.io/badge/API-PokeAPI-orange"/>
 
 ****************
@@ -17,7 +17,7 @@ Este é um Projeto proposto no servidor discord Aopa, Mundo! Com finalidade de c
 ### Atualização do APK: 
  
  - 12/07/21
- - version: 1.2.
+ - version: 1.3.
 
 ### Autores:
  - samuelllr
