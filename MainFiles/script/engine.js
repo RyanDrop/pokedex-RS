@@ -155,7 +155,7 @@ function engine( mode , idPoke , color , WH ){
                 //Peso
                 var weightPoke = pokemon.weight;
                 console.log( "Peso: " + weightPoke + "Kg" );
-                pesoPoke.innerHTML = weightPoke + "Kg"
+                pesoPoke.innerHTML = weightPoke;
 
                 //HP
                 var hpPoke = pokemon.stats[0].base_stat;
