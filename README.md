@@ -12,6 +12,9 @@ Este é um Projeto proposto no servidor do discord Aopa, Mundo! Com finalidade d
 
 ## Aopa Mundo!
  - Convite para o servidor: https://discord.gg/fbRPr4btND
+ - PokeAPI:https://pokeapi.co
+
+
 
 ****************
 ### Atualização do APK: 
