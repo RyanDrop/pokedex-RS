@@ -10,6 +10,8 @@
 <br/><br/>
 Este é um Projeto proposto no servidor do discord Aopa, Mundo! Com finalidade de conhecimento e desafio para nossos saberes para criar uma Pokedex utilizado a API PokeAPI. O app tem a seguinte funcionalidade, funcionar como uma pokedex, possui os 151 pokemons da primeira geração, e com um clique acima deles é possivel obter algumas informações sobre o mesmo.
 
+Este repositório tem finalidades de treinamento e adiquerimento de conhecimentos em programação, não foi feito para distribuição e nem venda.
+
 ## Aopa Mundo!
  - Convite para o servidor: https://discord.gg/fbRPr4btND
  - PokeAPI:https://pokeapi.co
